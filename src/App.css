@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Container {
+  height: 100vh;
+  width: 70vw;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.searchbar {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 1em;
+  background-color: #3c3c3c;
+  vertical-align: center;
+}
+
+.navbar-logo {
+  font-size: 3rem;
+  color: red;
+}
+
+.navbar-text {
+  display: inline;
+  font-size: 2rem;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.search-form {
+  padding-left: 3%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search-input {
+  height: 70%;
+  width: 30vw;
+}
+
+.video-card-list {
+  display: flex;
+  flex-direction: column;
+  padding: 0.2rem;
+  margin: 0;
+}
+
+.video-card {
+  display: flex;
+  height: 45%;
+  width: 45%;
+  padding: 0.2rem;
+  cursor: pointer;
+}
+.video-card:hover {
+  transform: scale(1.05);
+  transition-duration: 0.1s;
+}
+.video-thumbnail {
+  height: 90%;
+  width: 50%;
+}
+.video-card-inform {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  line-height: 100%;
+  text-align: center;
+}
+.video-card-title {
+  font-size: 0.7em;
+}
+
+.video-card-channelTitle {
+  font-size: 0.5em;
+  font-weight: 700;
 }
